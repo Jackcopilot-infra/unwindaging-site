@@ -28,28 +28,32 @@
             background: radial-gradient(circle at top left, #1e293b, #0f172a); 
             border-radius: 16px; 
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
-            text-align: center; /* Centers all child elements */
+            /* THE FIX: Force vertical centering of all children */
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;
         }
         
         /* CENTERED LOGO */
-        .header-logo {
-            margin-bottom: 25px;
-        }
         .main-logo {
             height: 55px; 
             width: auto;
+            margin-bottom: 30px; /* Vertical gap after logo */
             filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 10px rgba(56, 189, 248, 0.2));
+            display: block;
         }
 
         /* CENTERED MAIN TITLE - 20PX PRECISION */
         .logo-text-main { 
             font-size: 20px; 
-            letter-spacing: 6px; 
+            letter-spacing: 7px; 
             font-weight: 700; 
             color: #38bdf8; 
             text-transform: uppercase; 
-            margin-bottom: 30px; /* The "Skip one line" gap */
+            margin-bottom: 40px; /* Vertical gap after title */
             line-height: 1.2;
+            width: 100%;
         }
 
         h1 { 
@@ -67,9 +71,7 @@
             font-size: 1.1rem; 
             margin-bottom: 3rem; 
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: left; /* Kept text left-aligned for readability while container is centered */
+            text-align: left; /* Keep body text left-aligned for readability */
         }
         
         .systems-grid { 
@@ -77,6 +79,7 @@
             grid-template-columns: repeat(3, 1fr); 
             gap: 15px; 
             margin-bottom: 40px; 
+            width: 100%;
         }
 
         .system-tag { 
@@ -110,6 +113,7 @@
             letter-spacing: 1px; 
             border-top: 1px solid #1e293b; 
             padding-top: 25px; 
+            width: 100%;
         }
     </style>
 </head>
@@ -118,9 +122,7 @@
     <div class="wrapper">
         <div class="vault-container">
             
-            <div class="header-logo">
-                <img src="logo.png" alt="UA" class="main-logo">
-            </div>
+            <img src="logo.png" alt="UA" class="main-logo">
 
             <div class="logo-text-main">UNWINDAGING (UA) ENGINE</div>
             
