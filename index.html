@@ -13,24 +13,12 @@
             padding: 0;
             min-height: 100vh;
         }
-        /* Top Left Logo Area */
-        .header-logo {
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            z-index: 100;
-        }
-        .main-logo {
-            height: 60px; 
-            width: auto;
-            display: block;
-        }
         .wrapper {
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            padding: 80px 20px 20px 20px; 
+            padding: 20px;
         }
         .vault-container { 
             max-width: 850px; 
@@ -42,24 +30,76 @@
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
             text-align: center; 
         }
-        .logo-text-sub { font-size: 14px; letter-spacing: 5px; font-weight: bold; color: #38bdf8; margin-bottom: 20px; text-transform: uppercase; opacity: 0.8; }
+        
+        /* New Inline Logo Header */
+        .vault-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .inline-logo {
+            height: 45px; /* Balanced with the text height */
+            width: auto;
+            /* This drop-shadow helps your green logo "pop" against the dark background */
+            filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4));
+        }
+        .logo-text-sub { 
+            font-size: 18px; 
+            letter-spacing: 5px; 
+            font-weight: bold; 
+            color: #38bdf8; 
+            text-transform: uppercase; 
+        }
+
         h1 { font-size: 2.2rem; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2; }
         p { line-height: 1.8; color: #94a3b8; font-size: 1.1rem; margin-bottom: 2.5rem; text-align: left; }
+        
         .systems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 40px; }
-        .system-tag { padding: 12px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 4px; font-size: 0.8rem; color: #38bdf8; text-transform: uppercase; font-weight: bold; }
-        .cta-button { display: inline-block; padding: 20px 40px; background-color: #38bdf8; color: #0f172a; text-decoration: none; font-weight: bold; border-radius: 6px; transition: 0.3s; letter-spacing: 1px; }
+        .system-tag { 
+            padding: 12px; 
+            background: rgba(56, 189, 248, 0.1); 
+            border: 1px solid rgba(56, 189, 248, 0.2); 
+            border-radius: 4px; 
+            font-size: 0.8rem; 
+            color: #38bdf8; 
+            text-transform: uppercase; 
+            font-weight: bold; 
+        }
+        
+        .cta-button { 
+            display: inline-block; 
+            padding: 20px 40px; 
+            background-color: #38bdf8; 
+            color: #0f172a; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            transition: 0.3s; 
+            letter-spacing: 1px; 
+        }
         .cta-button:hover { background-color: #7dd3fc; transform: translateY(-2px); }
-        .footer { margin-top: 50px; font-size: 0.75rem; color: #475569; letter-spacing: 1px; border-top: 1px solid #1e293b; padding-top: 20px; }
+        
+        .footer { 
+            margin-top: 50px; 
+            font-size: 0.75rem; 
+            color: #475569; 
+            letter-spacing: 1px; 
+            border-top: 1px solid #1e293b; 
+            padding-top: 20px; 
+        }
     </style>
 </head>
 <body>
-    <div class="header-logo">
-        <img src="logo.png" alt="UA LOGO" class="main-logo">
-    </div>
 
     <div class="wrapper">
         <div class="vault-container">
-            <div class="logo-text-sub">UNWINDAGING (UA) ENGINE</div>
+            <div class="vault-header">
+                <img src="logo.png" alt="UA" class="inline-logo">
+                <div class="logo-text-sub">UNWINDAGING (UA) ENGINE</div>
+            </div>
+
             <h1>Strategic Biological Synthesis for Leadership Resilience</h1>
             <p>In turbulent times of rapid AI integration, market volatility, and mandated reorganization, executive "fatigability" is a hidden business risk. The UA-Engine identifies systemic malaises standard blood tests miss, utilizing proprietary nutrient-gap analysis and the Linus Pauling Baseline to optimize 12 key systems of physical and cognitive output.</p>
             
