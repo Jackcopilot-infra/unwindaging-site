@@ -23,43 +23,37 @@
         .vault-container { 
             max-width: 950px; 
             width: 100%; 
-            padding: 40px 60px 60px 60px; 
+            padding: 60px; 
             border: 1px solid #1e293b; 
             background: radial-gradient(circle at top left, #1e293b, #0f172a); 
             border-radius: 16px; 
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
-            position: relative; 
-            text-align: left;
+            text-align: center; /* Centers all child elements */
         }
         
-        /* LOGO IN TOP-LEFT CORNER */
-        .corner-logo {
-            position: absolute;
-            top: 30px;
-            left: 30px;
+        /* CENTERED LOGO */
+        .header-logo {
+            margin-bottom: 25px;
+        }
+        .main-logo {
             height: 55px; 
             width: auto;
             filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 10px rgba(56, 189, 248, 0.2));
         }
 
-        /* VERTICAL GAP (THE "SKIP LINE") */
-        .content-start {
-            margin-top: 90px; 
-        }
-
-        /* BRAND NAME - REDUCED TO 24PX */
+        /* CENTERED MAIN TITLE - 20PX PRECISION */
         .logo-text-main { 
-            font-size: 24px; 
-            letter-spacing: 4px; 
+            font-size: 20px; 
+            letter-spacing: 6px; 
             font-weight: 700; 
             color: #38bdf8; 
             text-transform: uppercase; 
-            margin-bottom: 8px;
+            margin-bottom: 30px; /* The "Skip one line" gap */
             line-height: 1.2;
         }
 
         h1 { 
-            font-size: 1.9rem; 
+            font-size: 2rem; 
             margin-top: 0;
             margin-bottom: 1.5rem; 
             color: #ffffff; 
@@ -71,8 +65,11 @@
             line-height: 1.8; 
             color: #94a3b8; 
             font-size: 1.1rem; 
-            margin-bottom: 2.5rem; 
+            margin-bottom: 3rem; 
             max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left; /* Kept text left-aligned for readability while container is centered */
         }
         
         .systems-grid { 
@@ -91,14 +88,8 @@
             color: #38bdf8; 
             text-transform: uppercase; 
             font-weight: bold; 
-            text-align: center;
         }
         
-        .cta-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
         .cta-button { 
             display: inline-block; 
             padding: 20px 45px; 
@@ -119,7 +110,6 @@
             letter-spacing: 1px; 
             border-top: 1px solid #1e293b; 
             padding-top: 25px; 
-            text-align: center;
         }
     </style>
 </head>
@@ -128,27 +118,26 @@
     <div class="wrapper">
         <div class="vault-container">
             
-            <img src="logo.png" alt="UA" class="corner-logo">
-
-            <div class="content-start">
-                <div class="logo-text-main">UNWINDAGING (UA) ENGINE</div>
-                <h1>Strategic Biological Synthesis for Leadership Resilience</h1>
-                
-                <p>In turbulent times of rapid AI integration, market volatility, and mandated reorganization, executive "fatigability" is a hidden business risk. The UA-Engine identifies systemic malaises standard blood tests miss, utilizing proprietary nutrient-gap analysis and the Linus Pauling Baseline to optimize 12 key systems of physical and cognitive output.</p>
-                
-                <div class="systems-grid">
-                    <div class="system-tag">Cognitive Load</div>
-                    <div class="system-tag">Hormonal Axis</div>
-                    <div class="system-tag">Body Framework</div>
-                    <div class="system-tag">Metabolic</div>
-                    <div class="system-tag)Cellular</div>
-                    <div class="system-tag">Cardio-Vasc</div>
-                </div>
-
-                <div class="cta-container">
-                    <a href="mailto:contact@unwindaging.com" class="cta-button">REQUEST EXECUTIVE AUDIT | $299</a>
-                </div>
+            <div class="header-logo">
+                <img src="logo.png" alt="UA" class="main-logo">
             </div>
+
+            <div class="logo-text-main">UNWINDAGING (UA) ENGINE</div>
+            
+            <h1>Strategic Biological Synthesis for Leadership Resilience</h1>
+            
+            <p>In turbulent times of rapid AI integration, market volatility, and mandated reorganization, executive "fatigability" is a hidden business risk. The UA-Engine identifies systemic malaises standard blood tests miss, utilizing proprietary nutrient-gap analysis and the Linus Pauling Baseline to optimize 12 key systems of physical and cognitive output.</p>
+            
+            <div class="systems-grid">
+                <div class="system-tag">Cognitive Load</div>
+                <div class="system-tag">Hormonal Axis</div>
+                <div class="system-tag">Body Framework</div>
+                <div class="system-tag">Metabolic</div>
+                <div class="system-tag">Cellular</div>
+                <div class="system-tag">Cardio-Vasc</div>
+            </div>
+
+            <a href="mailto:contact@unwindaging.com" class="cta-button">REQUEST EXECUTIVE AUDIT | $299</a>
 
             <div class="footer">
                 AES-256 ENCRYPTED VAULT | 15-DAY DATA PURGE PROTOCOL | OPERATIONAL 2026
