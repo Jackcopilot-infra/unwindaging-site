@@ -13,23 +13,24 @@
             padding: 0;
             min-height: 100vh;
         }
-        /* Logo Header Styling */
-        header {
-            padding: 20px;
+        /* Top Left Logo Area */
+        .header-logo {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 25px;
+            left: 25px;
+            z-index: 100;
         }
         .main-logo {
-            height: 50px; /* Adjust this height to fit your 250x67 proportions */
+            height: 60px; 
             width: auto;
+            display: block;
         }
         .wrapper {
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 80px 20px 20px 20px; 
         }
         .vault-container { 
             max-width: 850px; 
@@ -41,7 +42,7 @@
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
             text-align: center; 
         }
-        .logo-text { font-size: 24px; letter-spacing: 5px; font-weight: bold; color: #38bdf8; margin-bottom: 30px; text-transform: uppercase; }
+        .logo-text-sub { font-size: 14px; letter-spacing: 5px; font-weight: bold; color: #38bdf8; margin-bottom: 20px; text-transform: uppercase; opacity: 0.8; }
         h1 { font-size: 2.2rem; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2; }
         p { line-height: 1.8; color: #94a3b8; font-size: 1.1rem; margin-bottom: 2.5rem; text-align: left; }
         .systems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 40px; }
@@ -52,15 +53,15 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="UnwindAging Logo" class="main-logo">
-    </header>
+    <div class="header-logo">
+        <img src="logo.png" alt="UA LOGO" class="main-logo">
+    </div>
 
     <div class="wrapper">
         <div class="vault-container">
-            <div class="logo-text">UNWINDAGING (UA)</div>
+            <div class="logo-text-sub">UNWINDAGING (UA) ENGINE</div>
             <h1>Strategic Biological Synthesis for Leadership Resilience</h1>
-            <p>In turbulent times of rapid AI integration, market volatility and mandated reorganization, executive "fatigability" is a hidden business risk. The UA-Engine identifies systemic malaises standard blood tests miss, utilizing proprietary nutrient-gap analysis and the Linus Pauling Baseline to optimize 12 key systems of physical and cognitive output.</p>
+            <p>In turbulent times of rapid AI integration, market volatility, and mandated reorganization, executive "fatigability" is a hidden business risk. The UA-Engine identifies systemic malaises standard blood tests miss, utilizing proprietary nutrient-gap analysis and the Linus Pauling Baseline to optimize 12 key systems of physical and cognitive output.</p>
             
             <div class="systems-grid">
                 <div class="system-tag">Cognitive Load</div>
